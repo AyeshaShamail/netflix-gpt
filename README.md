@@ -3,8 +3,14 @@
 -- Create React App using npx-create-react-app netflix-gpt
 -- Configure Tailwind css
 -- Header
+-- Routing of App
 -- Login form
 -- Sign up form
+-- Form validation
+-- useRef hook
+-- Firebase Setup
+-- Deploying our app to production
+-- Create Sign up user account
 
 # Features when signed-in
 
@@ -14,7 +20,7 @@
     -Trailer in bg
     -Movie title and description and play button
   - Movie suggestion rows
-    -- MovieList x N
+    -MovieList xN
 - Netflix-GPT
   -Search bar
   -Movie suggestions
