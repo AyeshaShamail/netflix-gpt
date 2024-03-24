@@ -18,6 +18,8 @@
 -- Redirected our app
 -- BugFix: Sign up user display name and profile pic update
 -- BugFix: if user is not logged in,Redirect /browse to login page and vice versa
+-- Unsubscribe to the onAuthStateChanged callback once header unloads
+-- Add hardcoded values to constants file
 
 # Features when signed-in
 

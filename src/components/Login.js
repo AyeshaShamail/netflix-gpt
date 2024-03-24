@@ -9,6 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   //useRef is usd to reference a field over here(tag or input)
@@ -41,8 +42,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL:
-              "https://occ-0-4994-2164.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABUSntF8sS3XaxlL4kbgMzXhSHilR2oaXKyypWY_hXouAnTxBxaOigBfg-IX5z8rXMp4XyRdumCARSopncAJ3KG2eC7dwaI0.png?r=64f",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
               // Profile updated!
