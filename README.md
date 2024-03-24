@@ -16,6 +16,8 @@
 -- Implemented Sign out user API
 -- Updated Profile API call
 -- Redirected our app
+-- BugFix: Sign up user display name and profile pic update
+-- BugFix: if user is not logged in,Redirect /browse to login page and vice versa
 
 # Features when signed-in
 

@@ -1,15 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Login from "./Login";
 import Browse from "./Browse";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../utils/firebase";
-import { useDispatch } from "react-redux";
-import { addUser, removeUser } from "../utils/userSlice";
 
 const Body = () => {
-  const dispatch = useDispatch();
-
   const appRouter = createBrowserRouter([
     {
       path: "/",
@@ -21,26 +15,8 @@ const Body = () => {
     },
   ]);
 
-  // To set up the eventListener for once - we're using the useEffect hook
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        const { uid, email, displayName, photoURL } = user;
-        // update my store
-        dispatch(
-          addUser({
-            uid: uid,
-            email: email,
-            displayName: displayName,
-            photoURL: photoURL,
-          })
-        );
-      } else {
-        // User is signed out
-        dispatch(removeUser()); //not passing anything here as in userSlice it doesn't take action.payload but returns null
-      }
-    });
-  }, []);
+  // To set up the eventListener for once - we're using the useEffect hook - we're doing this to check authentication and set up the store
+
   return (
     <div>
       <RouterProvider router={appRouter} />
