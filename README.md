@@ -23,7 +23,14 @@
 -- Register for TMDB APi and create a new App and get access token.
 -- go to docs > go to API reference > Movie Lists > Now playing > get data from options and fetch and paste in constant.js and browse page respectively.
 -- To make browse page look clean, creating a custom hook useNowPlayingMovies to `Fetch data from TMDB API and update the store`
---
+-- Create movie slice
+-- Update the store with Moviesdata
+-- Plan for main and secondary container
+-- Fetch data for trailer video
+-- Update the store with Trailer Video with Video Data
+-- Embedded the youtube video
+-- Making it autoplay nad mute
+-- Added tailwind classes to make it look better
 
 # Features when signed-in
 
