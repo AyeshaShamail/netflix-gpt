@@ -31,6 +31,13 @@
 -- Embedded the youtube video
 -- Making it autoplay nad mute
 -- Added tailwind classes to make it look better
+-- Build secondary component i.e., Create movie suggestion component
+-- Build Movie List and Card
+-- Added TMDB Image_CDN_URL
+-- Made browse page looks good using Tailwing css
+-- Show popular movies list on browse page using custom hook
+--Show Top rated movies list on browse page using custom hook
+--Show Upcoming movies list on browse page using custom hook
 
 # Features when signed-in
 
