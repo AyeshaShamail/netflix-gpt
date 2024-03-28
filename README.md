@@ -20,6 +20,10 @@
 -- BugFix: if user is not logged in,Redirect /browse to login page and vice versa
 -- Unsubscribe to the onAuthStateChanged callback once header unloads
 -- Add hardcoded values to constants file
+-- Register for TMDB APi and create a new App and get access token.
+-- go to docs > go to API reference > Movie Lists > Now playing > get data from options and fetch and paste in constant.js and browse page respectively.
+-- To make browse page look clean, creating a custom hook useNowPlayingMovies to `Fetch data from TMDB API and update the store`
+--
 
 # Features when signed-in
 
