@@ -38,6 +38,10 @@
 -- Show popular movies list on browse page using custom hook
 --Show Top rated movies list on browse page using custom hook
 --Show Upcoming movies list on browse page using custom hook
+-- Build GPT search
+-- create GptSearch component
+-- Create new slice for GPT search
+-- `Multilingual feature is added in GPTSearch page`
 
 # Features when signed-in
 
